@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buona Pizza</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bg-white rounded shadow">
+        <div class="col-md-6">
+          <h3 class="header-dark">Mejora tu pizza</h3>
+          <p>
+            Puedes elegir 3 ingredientes gratis, cada ingrediente adicional
+            cuesta $800 pesos cada uno.
+          </p>
+          <p>Ingredientes disponibles para agregar a su pizza:</p>
+          <div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Carne" /> Carne
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Pollo" /> Pollo
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Tocino" /> Tocino
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Mozzarella" />
+              Mozzarella
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Champiñón" />
+              Champiñón
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Cebolla" />
+              Cebolla
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Piña" /> Piña
+            </div>
+            <div>
+              <input type="checkbox" class="ingredient" value="Pimentón" />
+              Pimentón
+            </div>
+          </div>
+          <p>
+            Los ingredientes seleccionados son:
+            <span id="selected-ingredients"></span>
+          </p>
+          <p>
+            Los ingredientes extras seleccionados son:
+            <span id="extra-ingredients"></span>
+          </p>
+        </div>
+        <div class="col-md-6" id="summary-section">
+          <h4 class="header-dark">Resumen de pedido</h4>
+          <p>Pizza XL: <span id="pizza-price">$15.000</span></p>
+          <div class="divider"></div>
+          <p>Ingredientes extras: <span id="extra-price">$0</span></p>
+          <div class="divider"></div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Propina</span>
+            <input
+              type="number"
+              class="form-control"
+              id="tip"
+              placeholder="Ingrese propina"
+            />
+          </div>
+          <button class="btn btn-success" id="submit-order">
+            Enviar Pedido con Propina
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
